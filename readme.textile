@@ -1,0 +1,16 @@
+h1. CakePHP Unique Key Plugin
+
+A CakePHP Plugin for creating uid with your model
+
+h2. Usage
+
+In your model
+
+bc. 
+var $actsAs = array(
+	'UniqueKey.UniqueKey' => array(
+		'callback' => true,
+		'field' => 'uid',
+		'size' => 3
+	)
+);
